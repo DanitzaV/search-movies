@@ -5,3 +5,7 @@
 .MuiGrid-container-1{
   border: none !important;
 }
+
+.h6Typography{
+  font-size: 1.25rem;
+}

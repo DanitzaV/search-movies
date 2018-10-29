@@ -9,13 +9,13 @@ const  InputSearch = ({valor,change,submits}) => {
       <form onSubmit={submits} style={{marginTop: "2em"}}>
     <TextField
           id="outlined-name"
-          label="busca una pelicula"
+          label="look for a movie"
           value={valor}
           onChange={change}
           required
           variant="outlined"
         />
-      <Button type="submit" variant="contained" color="primary" style={{marginTop: "8px", marginLeft: "10px"}}>Buscar</Button>
+      <Button type="submit" variant="contained" color="primary" style={{marginTop: "8px", marginLeft: "10px"}}>Search</Button>
     </form>
       </Grid>
     </Grid>

@@ -45,13 +45,13 @@ function MediaControlCard(props) {
             {props.datos.Title}
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-            {'Tipo: ' + props.datos.Type + ' Año: ' + props.datos.Year}
+            {'Kind: ' + props.datos.Type + ' Year: ' + props.datos.Year}
           </Typography>
         </CardContent>
         <div className={classes.controls}>
           <Grid container justify="center">
             <Grid item>
-            <Button onClick={() => props.clickmodal(props.datos)} variant="contained" color="secondary">Ver mas</Button>
+            <Button onClick={() => props.clickmodal(props.datos)} variant="contained" color="secondary">see more</Button>
             </Grid>
           </Grid>
          
