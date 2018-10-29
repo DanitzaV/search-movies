@@ -73,32 +73,6 @@ class SimpleModal extends React.Component {
                   <Button onClick={() => this.props.cerrar()} variant="contained" color="secondary">Close</Button>
                 </Grid>
               </Grid>
-              <Typography variant="h4" >
-                {this.props.datos.Title}
-              </Typography>
-              <Typography variant="h6" >
-                <strong>Sipnosis: </strong>
-              </Typography>
-              <Grid >
-                <Typography variant="h6">
-                  {this.props.datos.Plot}
-                </Typography>
-              </Grid>
-              <Typography variant="subtitle1" >
-                <strong className="h6Typography">Director: </strong> <br />  {this.props.datos.Director}
-              </Typography>
-              <Typography variant="subtitle1" >
-                <strong className="h6Typography" >Cast of actors: </strong> <br />  {this.props.datos.Actors}
-              </Typography>
-              <Typography variant="subtitle1" >
-                <strong className="h6Typography">Film genre: </strong> <br /> {this.props.datos.Genre}
-              </Typography>
-              <Typography variant="subtitle1" >
-                <strong className="h6Typography">Release year: </strong> <br />  {this.props.datos.Released}
-              </Typography>
-              <Typography variant="subtitle1" >
-                <strong className="h6Typography">Duration: </strong> <br /> {this.props.datos.Runtime}
-              </Typography>
             </Grid>
             <Grid item xs={12} >
               
