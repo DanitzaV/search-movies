@@ -65,8 +65,17 @@ class SimpleModal extends React.Component {
                 <Grid item xs={12}>
                   <Grid container justify="center">
                     <Grid item>
-                      <img style={{ width: "9em" }} src={this.props.datos.Poster} alt="img" />
+                      <img style={{ width: "5em" }} src={this.props.datos.Poster} alt="img" />
                     </Grid>
+                    <Grid item style={{marginLeft: "1em"}}>
+                      <p>
+                        <strong className="h6Typography">Film genre: </strong> <br /> {this.props.datos.Genre}
+                      </p>
+                      <p>
+                        <strong className="h6Typography">Duration: </strong> <br /> {this.props.datos.Runtime}
+                      </p>
+                    </Grid>
+                    
                   </Grid>
                   <Grid container justify="center">
                     <Grid item>
@@ -75,12 +84,6 @@ class SimpleModal extends React.Component {
                           {this.props.datos.Plot}
                         </p>
                       </Grid>
-                      <p>
-                        <strong className="h6Typography">Film genre: </strong> <br /> {this.props.datos.Genre}
-                      </p>
-                      <p>
-                        <strong className="h6Typography">Duration: </strong> <br /> {this.props.datos.Runtime}
-                      </p>
                     </Grid>
                   </Grid>
                   <Grid container justify="center">
