@@ -24,7 +24,7 @@ class Peliculas extends Component {
 
   handleSubmit(event) {
     console.log('ingresado en input: ' + this.state.value);
-    fetch(`http://www.omdbapi.com/?apikey=a076b37c&s=${this.state.value}`)
+    fetch(`https://www.omdbapi.com/?apikey=a076b37c&s=${this.state.value}`)
     .then(res => res.json())
     .then(res => this.setState({peliculas: res.Search}))
     .catch(e => console.log(e) )
@@ -34,7 +34,7 @@ class Peliculas extends Component {
     this.setState({open: false, pelicula: []})
   }
   abrirModal(e){
-    fetch(`http://www.omdbapi.com/?apikey=a076b37c&i=${e.imdbID}`)
+    fetch(`https://www.omdbapi.com/?apikey=a076b37c&i=${e.imdbID}`)
     .then(res => res.json())
     .then(res => this.setState({pelicula: res}))
     .catch(e => console.log(e) )
