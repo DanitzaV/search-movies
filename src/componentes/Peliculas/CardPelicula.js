@@ -5,7 +5,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import {Button,Grid} from '@material-ui/core'
+import { Button, Grid } from '@material-ui/core'
 
 const styles = theme => ({
   card: {
@@ -34,11 +34,11 @@ const styles = theme => ({
 });
 
 function MediaControlCard(props) {
-  
-  const { classes} = props;
-  
+
+  const { classes } = props;
+
   return (
-    <Card className={classes.card} style={{ maxWidth: 'min-content'}}>
+    <Card className={classes.card} style={{ maxWidth: 'min-content' }}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
@@ -51,13 +51,11 @@ function MediaControlCard(props) {
         <div className={classes.controls}>
           <Grid container justify="center">
             <Grid item>
-            <Button onClick={() => props.clickmodal(props.datos)} variant="contained" color="secondary">see more</Button>
+              <Button onClick={() => props.clickmodal(props.datos)} variant="contained" color="secondary">see more</Button>
             </Grid>
           </Grid>
-         
-          </div>
-          
         </div>
+      </div>
       <CardMedia
         className={classes.cover}
         image={props.datos.Poster}
