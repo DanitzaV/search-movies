@@ -17,7 +17,7 @@ class SimpleModal extends React.Component {
           onClose={() => this.props.cerrar()}>
           <div>
           <Hidden only={['xs']}>
-          <Grid container direction="row" justify="center" style={{ border: "none important", padding: "7em", background: "white",height: '100vh' }}>
+          <Grid container direction="row" justify="center" style={{ border: "none important", padding: "7em", background: "white",height: '100vh',paddingTop: "4em" }}>
             <Grid item xs={12} md={6} sm={6}>
               <Grid container justify="center">
                 <Grid item>
