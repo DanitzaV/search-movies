@@ -65,22 +65,22 @@ class SimpleModal extends React.Component {
                 <Grid item xs={12}>
                   <Grid container justify="center">
                     <Grid item>
-                      <img style={{ width: "10em" }} src={this.props.datos.Poster} alt="img" />
+                      <img style={{ width: "9em" }} src={this.props.datos.Poster} alt="img" />
                     </Grid>
                   </Grid>
                   <Grid container justify="center">
                     <Grid item>
                       <Grid >
-                        <Typography variant="h6">
+                        <p>
                           {this.props.datos.Plot}
-                        </Typography>
+                        </p>
                       </Grid>
-                      <Typography variant="subtitle1" >
+                      <p>
                         <strong className="h6Typography">Film genre: </strong> <br /> {this.props.datos.Genre}
-                      </Typography>
-                      <Typography variant="subtitle1" >
+                      </p>
+                      <p>
                         <strong className="h6Typography">Duration: </strong> <br /> {this.props.datos.Runtime}
-                      </Typography>
+                      </p>
                     </Grid>
                   </Grid>
                   <Grid container justify="center">
